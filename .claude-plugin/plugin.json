@@ -1,7 +1,7 @@
 {
   "name": "v-ai-documenti",
   "displayName": "v.ai — Documenti",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Redige pareri, circolari, memo, slide e prospetti fondati esclusivamente sulle fonti dell'archivio v.ai dello studio, con citazioni verificate a macchina.",
   "author": {
     "name": "Studio Vasapolli & Associati"

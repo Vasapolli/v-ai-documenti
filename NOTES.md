@@ -1,5 +1,15 @@
 # NOTES — plugin v-ai-documenti
 
+> ## ⚠️ PRIMA DI OGNI COMMIT: incrementa `version`
+>
+> In `.claude-plugin/plugin.json`. **Se non lo fai, il push non arriva ai client**: Claude vede lo
+> stesso numero di versione e conclude che non c'è niente di nuovo. Nessun errore, nessun avviso —
+> semplicemente il plugin resta quello vecchio e ci si perde un'ora a capire perché.
+>
+> Aggiornamento lato client: `/plugin marketplace update vasapolli` poi `/reload-plugins`.
+> Meglio ancora: `/plugin` → Marketplaces → `vasapolli` → **Enable auto-update** (per i marketplace
+> di terze parti è disattivato di default).
+
 Note di lavoro (non documentazione: quella è in `README.md`). Piano completo:
 `~/.claude/plans/vorrei-creare-una-skill-bright-lightning.md`.
 

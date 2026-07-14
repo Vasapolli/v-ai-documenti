@@ -45,6 +45,12 @@ controllo eseguito da una macchina.
    te le dà l'archivio: non inventarne, non rinumerarle, non riusarle per fonti diverse. Se citi
    testualmente, il virgolettato deve essere copiato **carattere per carattere** dal passo.
 
+   **E ogni etichetta va sciolta nell'elenco finale delle fonti.** Un `[F12]` che il lettore non può
+   risalire a un documento non è una citazione: è un numero, e dà l'apparenza della verificabilità
+   senza darla — il che è peggio di nessuna citazione, perché rassicura a torto. Nessun documento si
+   consegna senza la sezione **Fonti utilizzate**. Non ricostruirla a memoria: `v_ai_verifica_citazioni`
+   te la restituisce **già pronta**, con nome del documento, pagina e percorso d'archivio. Copia quella.
+
 4. **Prima di consegnare, chiama sempre `v_ai_verifica_citazioni`** passando la bozza completa.
    Se riporta violazioni, il documento **non si consegna**: correggi, oppure degrada l'affermazione
    a lacuna dichiarata. Non consegnare mai con violazioni aperte, nemmeno dicendo "da verificare".
@@ -72,8 +78,13 @@ le fonti dicono. L'ordine è: cerca → leggi → capisci cosa c'è davvero → 
 
 ## Le due sezioni obbligatorie in fondo a ogni documento
 
-**Fonti utilizzate** — l'elenco dei documenti citati, con etichetta, titolo e pagina, così che chi
-legge possa risalire all'originale nell'archivio.
+**Fonti utilizzate** — l'elenco dei documenti citati, con etichetta, titolo, pagina e percorso, così
+che chi legge possa risalire all'originale nell'archivio. **Non è facoltativa e non è una cortesia
+bibliografica: è ciò che rende il documento verificabile.** Vale per *ogni* documento prodotto — un
+parere, una circolare, una slide, una tabella — senza eccezioni per la brevità o per il formato.
+
+`v_ai_verifica_citazioni` restituisce questo elenco già formattato e **rifiuta la bozza se manca o è
+incompleto**: non è un promemoria, è un controllo che blocca la consegna.
 
 **Lacune dell'archivio** — i punti su cui non hai trovato fonti, detti in modo esplicito. Questa
 sezione si omette solo se è vuota, e va scritta senza imbarazzo: è l'informazione più utile per il

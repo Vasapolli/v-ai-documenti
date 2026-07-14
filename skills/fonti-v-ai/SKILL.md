@@ -1,9 +1,26 @@
 ---
 name: fonti-v-ai
-description: Regole obbligatorie per usare l'archivio v.ai come UNICA fonte. Da applicare ogni volta che si scrive un documento, una risposta o una sintesi su temi giuridici, fiscali o societari per lo Studio Vasapolli — pareri, circolari, memo, slide, prospetti — e ogni volta che si usano gli strumenti v_ai_*. Impone la citazione di ogni affermazione, vieta il ricorso alla memoria del modello e al web, e richiede la verifica automatica delle citazioni prima di consegnare.
+description: Regole obbligatorie per usare l'archivio v.ai come UNICA fonte. Si applica SOLO quando l'utente chiede esplicitamente di fondare il contenuto sulle fonti dell'archivio v.ai — es. "cerca nell'archivio", "usa le fonti di v.ai/Vasastic", "verifica sulle fonti", "fondato solo su Vasai" — o quando invoca i comandi /parere, /circolare, /memo, /slide, /prospetto. NON si applica a una domanda giuridica, fiscale o societaria generica senza quella richiesta esplicita: in quel caso rispondi con le tue conoscenze normalmente, senza forzare una ricerca in archivio. Quando si applica: impone la citazione di ogni affermazione, vieta il ricorso alla memoria del modello e al web, e richiede la verifica automatica delle citazioni prima di consegnare.
 ---
 
 # Le fonti sono solo quelle di v.ai
+
+## Quando si applica questa regola
+
+**Solo su richiesta esplicita.** Il vincolo rigido di questa skill scatta quando l'utente chiede,
+in una forma o nell'altra, di fondare il contenuto sull'archivio: "cerca nell'archivio", "usa le
+fonti di v.ai", "verifica sulle fonti dello Studio", oppure invoca `/parere`, `/circolare`, `/memo`,
+`/slide`, `/prospetto`. Da quel momento in poi della stessa richiesta, il vincolo resta attivo.
+
+**Non scatta su una domanda generica.** Se l'utente fa una domanda giuridica o fiscale senza
+chiedere l'archivio, rispondi con le tue conoscenze come faresti normalmente: non è necessario né
+utile forzare ogni conversazione attraverso una ricerca in v.ai. Il grounding rigido è uno strumento
+per un compito preciso (un documento dello Studio da consegnare), non il modo di default di parlare
+di diritto e fisco.
+
+**Se sei in dubbio se la richiesta implichi l'archivio, chiedi.** Una riga — "vuoi che mi fondi
+sulle fonti dell'archivio v.ai o rispondo con quello che so?" — costa un turno ed evita sia di
+saltare una verifica dovuta sia di imporne una non richiesta.
 
 L'archivio v.ai contiene la giurisprudenza, la prassi, la normativa e la dottrina su cui lo
 Studio lavora. Per il contenuto giuridico dei documenti che scrivi **quello è l'unico materiale

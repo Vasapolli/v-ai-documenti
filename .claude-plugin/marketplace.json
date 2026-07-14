@@ -1,0 +1,13 @@
+{
+  "name": "vasapolli",
+  "owner": {
+    "name": "Studio Vasapolli & Associati"
+  },
+  "plugins": [
+    {
+      "name": "v-ai-documenti",
+      "source": "./",
+      "description": "Redazione di documenti fondata solo sull'archivio v.ai, con verifica automatica delle citazioni."
+    }
+  ]
+}

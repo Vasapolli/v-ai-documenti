@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "v_ai": {
+      "type": "http",
+      "url": "${V_AI_MCP_URL:-https://ai.vasapolli.it/mcp}"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Artefatti locali, non versionare
+*.tar.gz
+*.zip
+
+# I modelli grafici dello Studio: binari, sostituibili per ogni installazione.
+# Vanno consegnati fuori dal repo (o versionati a parte con git-lfs se serve).
+templates/assets/*.docx
+templates/assets/*.pptx
+templates/assets/*.xlsx
+
+# Mai versionare token o segreti
+*.env
+*.secret

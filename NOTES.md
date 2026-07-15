@@ -6,9 +6,11 @@
 > stesso numero di versione e conclude che non c'è niente di nuovo. Nessun errore, nessun avviso —
 > semplicemente il plugin resta quello vecchio e ci si perde un'ora a capire perché.
 >
-> Aggiornamento lato client: `/plugin marketplace update vasapolli` poi `/reload-plugins`.
-> Meglio ancora: `/plugin` → Marketplaces → `vasapolli` → **Enable auto-update** (per i marketplace
-> di terze parti è disattivato di default).
+> Aggiornamento lato client (Cowork): il plugin va aggiunto **da GitHub** (repo pubblico
+> `Vasapolli/v-ai-documenti`), poi Directory → Plugin → Personale → chip del marketplace → menu
+> **"···" → attivare "Sincronizza automaticamente"**. Con l'auto-sync ON il nuovo commit arriva
+> da solo; altrimenti si usa **"Verifica aggiornamenti"** a mano. In Claude Code CLI l'equivalente è
+> `claude plugin marketplace update` + `claude plugin update v-ai-documenti@vasapolli`.
 
 Note di lavoro (non documentazione: quella è in `README.md`). Piano completo:
 `~/.claude/plans/vorrei-creare-una-skill-bright-lightning.md`.

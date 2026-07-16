@@ -6,11 +6,24 @@
 > stesso numero di versione e conclude che non c'è niente di nuovo. Nessun errore, nessun avviso —
 > semplicemente il plugin resta quello vecchio e ci si perde un'ora a capire perché.
 >
-> Aggiornamento lato client (Cowork): il plugin va aggiunto **da GitHub** (repo pubblico
-> `Vasapolli/v-ai-documenti`), poi Directory → Plugin → Personale → chip del marketplace → menu
-> **"···" → attivare "Sincronizza automaticamente"**. Con l'auto-sync ON il nuovo commit arriva
-> da solo; altrimenti si usa **"Verifica aggiornamenti"** a mano. In Claude Code CLI l'equivalente è
-> `claude plugin marketplace update` + `claude plugin update v-ai-documenti@vasapolli`.
+> ## Aggiornamento lato client (Cowork): due clic, in quest'ordine
+>
+> Installazione una-tantum: dal **"+"** di Directory → Plugin → Personale, aggiungendo il repo
+> pubblico `https://github.com/Vasapolli/v-ai-documenti`. Poi, a **ogni** release:
+>
+> 1. chip del marketplace → menu **"···" → "Verifica aggiornamenti"** → aggiorna il **catalogo**;
+> 2. scheda del plugin → **"Aggiorna"** → aggiorna l'**installazione**.
+>
+> Sono due livelli distinti. Saltando il punto 1, "Aggiorna" resta grigio con l'etichetta *"Versione
+> più recente"*: il catalogo vecchio fa credere all'app che tu sia già aggiornato.
+>
+> ⚠️ **"Sincronizza automaticamente" NON funziona** (verificato 16/07/2026: interruttore acceso,
+> v0.5.0 su GitHub, un giorno intero, spegnimento del PC, riavvio e perfino un aggiornamento
+> dell'app → il marketplace è rimasto inchiodato al commit della v0.4.0). Non fidarsi di
+> quell'interruttore: l'aggiornamento è **sempre manuale, su ogni postazione**.
+>
+> In Claude Code CLI l'equivalente è `claude plugin marketplace update` +
+> `claude plugin update v-ai-documenti@vasapolli`, poi riavvio.
 
 Note di lavoro (non documentazione: quella è in `README.md`). Piano completo:
 `~/.claude/plans/vorrei-creare-una-skill-bright-lightning.md`.
